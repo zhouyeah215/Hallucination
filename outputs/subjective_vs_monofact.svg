@@ -1,0 +1,86 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='600'>
+<style>text { font-family: Arial, sans-serif; }</style>
+<line x1='70' y1='530' x2='830' y2='530' stroke='black' stroke-width='2' />
+<line x1='70' y1='70' x2='70' y2='530' stroke='black' stroke-width='2' />
+<text x='450.0' y='35.0' text-anchor='middle' font-size='20'>Subjective uncertainty vs. Monofact rate</text>
+<text x='450.0' y='576.6666666666666' text-anchor='middle' font-size='18'>Subjective uncertainty (entropy)</text>
+<text x='23.333333333333332' y='300.0' text-anchor='middle' font-size='18' transform='rotate(-90 23.333333333333332,300.0)'>Monofact rate</text>
+<line x1='70.0' y1='530' x2='70.0' y2='538' stroke='black' stroke-width='1' />
+<text x='70.0' y='554' text-anchor='middle' font-size='14'>5.63</text>
+<line x1='70' y1='530.0' x2='62' y2='530.0' stroke='black' stroke-width='1' />
+<text x='58' y='535.0' text-anchor='end' font-size='14'>0.02</text>
+<line x1='260.0' y1='530' x2='260.0' y2='538' stroke='black' stroke-width='1' />
+<text x='260.0' y='554' text-anchor='middle' font-size='14'>5.63</text>
+<line x1='70' y1='415.0' x2='62' y2='415.0' stroke='black' stroke-width='1' />
+<text x='58' y='420.0' text-anchor='end' font-size='14'>0.09</text>
+<line x1='450.0' y1='530' x2='450.0' y2='538' stroke='black' stroke-width='1' />
+<text x='450.0' y='554' text-anchor='middle' font-size='14'>5.63</text>
+<line x1='70' y1='300.0' x2='62' y2='300.0' stroke='black' stroke-width='1' />
+<text x='58' y='305.0' text-anchor='end' font-size='14'>0.16</text>
+<line x1='640.0' y1='530' x2='640.0' y2='538' stroke='black' stroke-width='1' />
+<text x='640.0' y='554' text-anchor='middle' font-size='14'>5.64</text>
+<line x1='70' y1='185.0' x2='62' y2='185.0' stroke='black' stroke-width='1' />
+<text x='58' y='190.0' text-anchor='end' font-size='14'>0.23</text>
+<line x1='830.0' y1='530' x2='830.0' y2='538' stroke='black' stroke-width='1' />
+<text x='830.0' y='554' text-anchor='middle' font-size='14'>5.64</text>
+<line x1='70' y1='70.0' x2='62' y2='70.0' stroke='black' stroke-width='1' />
+<text x='58' y='75.0' text-anchor='end' font-size='14'>0.30</text>
+<circle cx='830.0' cy='530.0' r='6' fill='#4a0087' stroke='black' stroke-width='0.5'><title>alpha=0.50
+uncertainty=5.638
+monofact=0.020</title></circle>
+<circle cx='543.3274127785663' cy='425.0877192982456' r='6' fill='#49267e' stroke='black' stroke-width='0.5'><title>alpha=0.75
+uncertainty=5.634
+monofact=0.085</title></circle>
+<circle cx='70.0' cy='441.2280701754386' r='6' fill='#484d76' stroke='black' stroke-width='0.5'><title>alpha=1.00
+uncertainty=5.628
+monofact=0.075</title></circle>
+<circle cx='652.6979783017999' cy='134.5614035087719' r='6' fill='#469a65' stroke='black' stroke-width='0.5'><title>alpha=1.50
+uncertainty=5.636
+monofact=0.265</title></circle>
+<circle cx='693.0671761823083' cy='70.0' r='6' fill='#44e754' stroke='black' stroke-width='0.5'><title>alpha=2.00
+uncertainty=5.636
+monofact=0.305</title></circle>
+<text x='860.0' y='60' text-anchor='middle' font-size='16'>Pareto alpha</text>
+<rect x='850' y='70.0' width='20' height='12.5' fill='#4a0087' stroke='none' />
+<rect x='850' y='81.7948717948718' width='20' height='12.5' fill='#490585' stroke='none' />
+<rect x='850' y='93.58974358974359' width='20' height='12.5' fill='#490b84' stroke='none' />
+<rect x='850' y='105.38461538461539' width='20' height='12.5' fill='#491183' stroke='none' />
+<rect x='850' y='117.17948717948718' width='20' height='12.5' fill='#491781' stroke='none' />
+<rect x='850' y='128.97435897435898' width='20' height='12.5' fill='#491d80' stroke='none' />
+<rect x='850' y='140.76923076923077' width='20' height='12.5' fill='#49237f' stroke='none' />
+<rect x='850' y='152.56410256410257' width='20' height='12.5' fill='#48297d' stroke='none' />
+<rect x='850' y='164.35897435897436' width='20' height='12.5' fill='#482f7c' stroke='none' />
+<rect x='850' y='176.15384615384616' width='20' height='12.5' fill='#48357b' stroke='none' />
+<rect x='850' y='187.94871794871796' width='20' height='12.5' fill='#483b79' stroke='none' />
+<rect x='850' y='199.74358974358975' width='20' height='12.5' fill='#484178' stroke='none' />
+<rect x='850' y='211.53846153846155' width='20' height='12.5' fill='#484777' stroke='none' />
+<rect x='850' y='223.33333333333331' width='20' height='12.5' fill='#484d76' stroke='none' />
+<rect x='850' y='235.12820512820514' width='20' height='12.5' fill='#475274' stroke='none' />
+<rect x='850' y='246.92307692307693' width='20' height='12.5' fill='#475873' stroke='none' />
+<rect x='850' y='258.71794871794873' width='20' height='12.5' fill='#475e72' stroke='none' />
+<rect x='850' y='270.51282051282055' width='20' height='12.5' fill='#476470' stroke='none' />
+<rect x='850' y='282.3076923076923' width='20' height='12.5' fill='#476a6f' stroke='none' />
+<rect x='850' y='294.1025641025641' width='20' height='12.5' fill='#47706e' stroke='none' />
+<rect x='850' y='305.8974358974359' width='20' height='12.5' fill='#46766c' stroke='none' />
+<rect x='850' y='317.6923076923077' width='20' height='12.5' fill='#467c6b' stroke='none' />
+<rect x='850' y='329.4871794871795' width='20' height='12.5' fill='#46826a' stroke='none' />
+<rect x='850' y='341.28205128205127' width='20' height='12.5' fill='#468868' stroke='none' />
+<rect x='850' y='353.0769230769231' width='20' height='12.5' fill='#468e67' stroke='none' />
+<rect x='850' y='364.8717948717949' width='20' height='12.5' fill='#469466' stroke='none' />
+<rect x='850' y='376.66666666666663' width='20' height='12.5' fill='#469a65' stroke='none' />
+<rect x='850' y='388.46153846153845' width='20' height='12.5' fill='#459f63' stroke='none' />
+<rect x='850' y='400.2564102564103' width='20' height='12.5' fill='#45a562' stroke='none' />
+<rect x='850' y='412.05128205128204' width='20' height='12.5' fill='#45ab61' stroke='none' />
+<rect x='850' y='423.84615384615387' width='20' height='12.5' fill='#45b15f' stroke='none' />
+<rect x='850' y='435.64102564102564' width='20' height='12.5' fill='#45b75e' stroke='none' />
+<rect x='850' y='447.4358974358974' width='20' height='12.5' fill='#45bd5d' stroke='none' />
+<rect x='850' y='459.2307692307692' width='20' height='12.5' fill='#44c35b' stroke='none' />
+<rect x='850' y='471.02564102564105' width='20' height='12.5' fill='#44c95a' stroke='none' />
+<rect x='850' y='482.8205128205128' width='20' height='12.5' fill='#44cf59' stroke='none' />
+<rect x='850' y='494.61538461538464' width='20' height='12.5' fill='#44d557' stroke='none' />
+<rect x='850' y='506.4102564102564' width='20' height='12.5' fill='#44db56' stroke='none' />
+<rect x='850' y='518.2051282051282' width='20' height='12.5' fill='#44e155' stroke='none' />
+<rect x='850' y='530.0' width='20' height='12.5' fill='#44e754' stroke='none' />
+<text x='880' y='75' font-size='14'>2.00</text>
+<text x='880' y='530' font-size='14'>0.50</text>
+</svg>
