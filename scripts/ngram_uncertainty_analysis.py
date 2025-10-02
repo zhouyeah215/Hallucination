@@ -112,6 +112,27 @@ def build_base_dataset(size: int, seed: int = 1217) -> List[Dict[str, object]]:
     return records
 
 
+def serialise_gold(gold: Sequence[str]) -> str:
+    return " | ".join(gold)
+
+
+def save_dataset(path: Path, records: Sequence[Dict[str, object]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fieldnames = ["x", "y", "names", "gold"]
+    with path.open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=fieldnames)
+        writer.writeheader()
+        for record in records:
+            writer.writerow(
+                {
+                    "x": record["x"],
+                    "y": record["y"],
+                    "names": record["names"],
+                    "gold": serialise_gold(record["gold"]),
+                }
+            )
+
+
 def create_powerlaw_p(records: List[Dict[str, object]], pareto_alpha: float, rng: random.Random) -> List[Dict[str, object]]:
     expanded: List[Dict[str, object]] = []
     for record in records:
@@ -300,6 +321,9 @@ def run_pipeline(
     output_dir.mkdir(parents=True, exist_ok=True)
 
     base_records = build_base_dataset(dataset_size, seed)
+    dataset_dir = output_dir / "datasets"
+    save_dataset(dataset_dir / "base_dataset.csv", base_records)
+
     ngram = NGramLanguageModel(n=ngram_order, smoothing=smoothing)
     ngram.fit([r["y"] for r in base_records])
 
@@ -307,6 +331,7 @@ def run_pipeline(
 
     rows: List[Dict[str, float]] = []
     for alpha, records in sorted(resampled.items(), key=lambda item: item[0]):
+        save_dataset(dataset_dir / f"pareto_alpha_{alpha:.2f}.csv", records)
         monofact_rate = mono_calc(records)
         subjective_uncertainty = compute_subjective_uncertainty(ngram, [r["y"] for r in records])
         rows.append({
