@@ -43,9 +43,12 @@ covered by this document:
 3. Estimate Monofact rates for each view using the shared utility functions.
 4. Train an n-gram language model on the biographies and compute token-level
    entropy as a notion of subjective uncertainty.
-5. Produce a scatter plot showing the relationship between subjective
+5. Persist the generated datasets to `outputs/datasets/`, including the base
+   biographies and each Pareto-resampled sample so the downstream analyses use
+   exactly the same data.
+6. Produce a scatter plot showing the relationship between subjective
    uncertainty and Monofact rate, stored in `outputs/subjective_vs_monofact.svg`.
-6. Persist a CSV summary that ties the alpha parameter, Monofact rate and
+7. Persist a CSV summary that ties the alpha parameter, Monofact rate and
    average subjective uncertainty together.
 
 The script is entirely self-contained: running it from the repository root will
